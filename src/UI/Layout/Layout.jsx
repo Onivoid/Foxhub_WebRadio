@@ -8,9 +8,9 @@ class Layout extends Component {
   }
   render(){
     return(
-      <nav>
-        <i className="fas fa-microphone-alt nav_icon_title"></i>
-      </nav>
+      <div>
+        <p>Layout OK</p>
+      </div>
     );
   }
 }
