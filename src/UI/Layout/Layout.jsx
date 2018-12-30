@@ -8,8 +8,8 @@ class Layout extends Component {
   }
   render(){
     return(
-      <div>
-        <p>Layout OK</p>
+      <div class="Layout">
+        <p>Layout</p>
       </div>
     );
   }
