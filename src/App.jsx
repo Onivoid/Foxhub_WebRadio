@@ -18,7 +18,6 @@ class App extends Component {
         return (
           <BrowserRouter>
             <div>
-              <Layout/>
               <Route path="/" exact="true" component={Home} />
             </div>
           </BrowserRouter>

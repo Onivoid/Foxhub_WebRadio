@@ -1,31 +1,52 @@
 .Home
   display: grid
-  grid-template-rows: repeat(2,1fr)
+  grid-template-columns: repeat(2, 1fr)
+  color: #333
+  font-family: 'Thasadith', sans-serif
   height: 100vh
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
-  filter: brightness(80%) saturate(80%)
-  .Home_title
+  .left
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
+  .right
     display: flex
     flex-direction: column
-    justify-content: flex-end
-    align-items: center
-    height: 100%
-    width: 100%
-    .title
-      text-align: center
-  .Home_button
-    display: flex
-    flex-direction: row
     justify-content: center
     align-items: center
-    height: 100%
-    width: 100%
-    .button
-      border: 1px solid #333
-      border-radius: 0.5em
-      font-size: 20px
-      margin: 0 5px
-      padding: 15px 10px
-      transition: all 0.15s
+    .logo
+      width: 150px
+      filter: brightness(120%) saturate(80%)
+    .title
+      font-size: 3em
+    .subtitle
+      font-size: 1.5em
+    .login
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      margin: 30px 0 0 0
+      width: 100%
+    .input
+      border: 1px solid #999
+      border-radius: .5em
+      color: #333
+      margin: 10px 0
+      font-size: 1.2em
+      text-align: center
+      transition: all .2s
+      padding: 10px 15px
+      width: 40%
+      &:focus
+        outline: none
+      &:focus,&:hover
+        background-color: #84fab0
+    .links
+      padding: 20px 0
+    .sign-button
+      background: #84fab0
+      border-radius: 1em
+      margin: 5px 5px 20px
+      font-size: 1.2em
+      padding: 10px 15px
+      transition: all .2s
       &:hover
-        background-color: rgba(255,255,255,0.3)
+        filter: brightness(110%)
